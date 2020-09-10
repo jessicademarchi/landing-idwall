@@ -1,0 +1,67 @@
+.toolbar{
+    position: fixed;
+    overflow: hidden;
+
+    width: 100vw;
+    margin: 0;
+
+    background-color: #fff;
+    box-shadow: 0 0 20px -4px rgba(0, 0, 0, 0.1);
+    
+    display: flex;
+    justify-content: center;
+}
+
+.toolbar .content{        
+    width: var(--screen-width);
+
+    padding: 1.8rem 0rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.toolbar .content a{    
+    font-size: 1.8rem;
+    color: var(--text-color);
+    padding: 1rem;
+
+    transition-duration: 200ms;
+}
+
+.toolbar .content a:not(:first-child):hover  {
+    font-weight: 800;
+    color: #fff;
+
+    border-radius: 0.8rem;
+    background-color: var(--principal-blue);
+}
+
+.toolbar .content .menu {
+  display: none;
+}
+
+@media screen and (max-width: 860px) {
+    .toolbar .content a:not(:first-child) {
+        display: none;
+    }
+    .toolbar .content a.menu {
+        display: block;
+        
+        background-color: var(--principal-blue);
+
+        font-weight: 800;
+        color: #fff;
+
+        padding: 1.6rem;
+
+        border-radius: 0.8rem;
+
+        transition-duration: 200ms;
+    }
+    .toolbar .content a.menu:hover {
+        opacity: 0.8;
+    }
+}
+  

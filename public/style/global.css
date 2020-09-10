@@ -1,0 +1,38 @@
+@font-face {
+	font-family: 'margen-regular';
+	src: url('fonts/margen-regular.eot');
+	src: local('☺'), url('fonts/margen-regular.woff') format('woff'), url('fonts/margen-regular.ttf') format('truetype'), url('fonts/margen-regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'margen-bold';
+	src: url('fonts/margen-bold.eot');
+	src: local('☺'), url('fonts/margen-bold.woff') format('woff'), url('fonts/margen-bold.ttf') format('truetype'), url('fonts/margen-bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'margen-rounded-bold';
+	src: url('fonts/margen-rounded-bold.eot');
+	src: local('☺'), url('fonts/margen-rounded-bold.woff') format('woff'), url('fonts/margen-rounded-bold.ttf') format('truetype'), url('fonts/margen-rounded-bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+:root{
+    font-size: 60%;
+    
+    --principal-blue: #50f;
+    --principal-green: #11eab5;
+    --text-color: #666666;
+    --grey-background: #f6f6f6;
+
+    --font-regular: 'margen-regular';
+    --font-bold: 'margen-bold';
+    --font-black: 'margen-rounded-bold';
+
+    --screen-width: 80%;
+}
